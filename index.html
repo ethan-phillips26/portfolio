@@ -15,19 +15,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="text-slate-200 main-font">
+  <body class="text-slate-200 main-font bg-slate-50">
     <div
       class="max-w-3xl mx-auto text-left px-6 py-16 text-black divide-y divide-gray-200"
     >
       <header class="mb-10">
-        <h1 class="text-5xl font-bold mb-3">Ethan Phillips</h1>
+        <div class="flex items-center gap-4 mb-3">
+          <img
+            src="images/headshot.jpg"
+            alt="Ethan Phillips headshot"
+            class="w-24 h-24 rounded-full object-cover ring-2 ring-slate-300 ring-offset-2 ring-offset-slate-50"
+          />
+          <h1 class="text-5xl font-bold">Ethan Phillips</h1>
+        </div>
 
         <p class="text-xl mb-1">Software Engineer</p>
+        <p class="text-sm text-gray-500 mb-3">
+          <i class="fas fa-map-marker-alt mr-1"></i>Fargo, ND · Open to Relocating
+        </p>
 
         <a
           href="https://docs.google.com/document/d/15ImwRVWn-HkT3pGki2FrkIFWOJ7MFwwiiQOmz6r3F48/edit?usp=sharing"
           target="_blank"
-          class="text-md mb-6 text-gray-500 hover:text-black transition inline-block"
+          class="resume-link mb-6"
         >
           View Resume
         </a>
@@ -37,7 +47,7 @@
           <a
             href="https://www.ndsu.edu/"
             target="_blank"
-            class="text-green-700 hover:underline hover:text-green-900 transition"
+            class="inline-link inline-link-green"
           >North Dakota State University</a>
           and plan to graduate in December 2026. I enjoy working in
           collaborative environments, and taking on projects that allow me to
@@ -49,12 +59,12 @@
           <a
             href="https://dynonavionics.com/home.php"
             target="_blank"
-            class="text-blue-700 hover:underline hover:text-blue-900 transition"
+            class="inline-link inline-link-blue"
           >Dynon Avionics</a>
           where I work to help develop features for the SkyView HDX. Prior to
-          Dynon, I worked as a Digitial Fabrication Lab Technician at NDSU and
+          Dynon, I worked as a Digital Fabrication Lab Technician at NDSU and
           an IT Intern for Bismarck Public Schools, both providing me with
-          collaberative work experience and opportunities to develop my
+          collaborative work experience and opportunities to develop my
           technical skills.
         </p>
 
@@ -66,8 +76,6 @@
         </p>
 
         <div class="flex gap-4 mb-6">
-          <p class="text-md mb-3">Social Links:</p>
-
           <div class="flex gap-6 text-2xl mb-6">
             <a
               href="https://github.com/ethan-phillips26"
@@ -96,104 +104,149 @@
       </header>
 
       <div class="mb-10">
-        <h2 class="text-2xl font-bold mt-5 mb-5">Experience</h2>
+        <h2 class="text-2xl font-bold mt-5 mb-5 section-header">Education</h2>
+
+        <div class="entry-card fade-in">
+          <p class="text-sm text-gray-500">August 2022 — December 2026</p>
+          <p class="font-medium">B.S. Computer Science · North Dakota State University</p>
+          <p class="text-sm text-gray-600 mt-1">
+            Fargo, ND · GPA: 4.0 · Dean's List 3/3 Semesters
+          </p>
+          <p class="text-sm text-gray-500 mt-2">Relevant Coursework: Data Structures & Algorithms, Computer Organization & Architecture, Probability & Statistics, Algorithm Analysis, Theoretical Computer Science, Database Systems</p>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <h2 class="text-2xl font-bold mt-5 mb-5 section-header">Experience</h2>
 
         <div class="space-y-10">
-          <div>
+          <div class="entry-card fade-in">
             <p class="text-sm text-gray-500">March 2025 — Present</p>
             <p class="font-medium">
               Software Engineering Intern · Dynon Avionics
             </p>
             <p class="text-sm text-gray-600 mt-1">
-              Develop avionics system features, and simulation tools for the
-              SkyView HDX, using C++ on Linux in an Agile development
-              environment.
+              Develop and maintain safety-critical avionics features for the SkyView HDX flight display in C++ on Linux. Built a Qt-based instrument simulator to enable hardware-independent testing, and contribute to containerized build and deployment workflows in an Agile environment.
             </p>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <a href="https://isocpp.org/" target="_blank" class="skill-tag">C++</a>
+              <a href="https://www.kernel.org/" target="_blank" class="skill-tag">Linux</a>
+              <a href="https://www.docker.com/" target="_blank" class="skill-tag">Docker</a>
+              <a href="https://www.gnu.org/software/make/" target="_blank" class="skill-tag">Make</a>
+              <a href="https://www.sourceware.org/gdb/" target="_blank" class="skill-tag">GDB</a>
+              <a href="https://www.qt.io/" target="_blank" class="skill-tag">Qt</a>
+            </div>
           </div>
 
-          <div>
+          <div class="entry-card fade-in">
             <p class="text-sm text-gray-500">September 2024 - March 2025</p>
             <p class="font-medium">
               Digital Fabrication Lab Technician · North Dakota State University
             </p>
             <p class="text-sm text-gray-600 mt-1">
-              Provided support to both students and staff with the use of 3D
-              printers, resin printers, and laser engravers.
+              Supported students and faculty in operating 3D printers, resin printers, and laser engravers, troubleshooting hardware and software issues to minimize equipment downtime.
             </p>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <a href="https://www.prusa3d.com/" target="_blank" class="skill-tag">3D Printing</a>
+              <a href="https://www.ulsinc.com/" target="_blank" class="skill-tag">Laser Engraving</a>
+            </div>
           </div>
 
-          <div>
+          <div class="entry-card fade-in">
             <p class="text-sm text-gray-500">September 2024 - March 2025</p>
             <p class="font-medium">
-              Information Technology Intern · Bismarck Public Schoolss
+              Information Technology Intern · Bismarck Public Schools
             </p>
             <p class="text-sm text-gray-600 mt-1">
-              Provided in-person tech support to both students and staff at
-              Century High School. Installed and configured audio visual
-              equipment in classrooms such as projectors and ceiling speakers.
-              Diagnosed and repaired laptops from all schools in the Century
-              feeder.
+              Deployed and configured AV equipment across classrooms at Century High School, including projectors and ceiling speakers. Diagnosed and repaired laptops district-wide, providing hardware and software support for students and staff across the Century feeder schools.
             </p>
           </div>
         </div>
       </div>
 
       <div class="mb-10">
-        <h2 class="text-2xl font-bold mt-5 mb-5">Projects</h2>
+        <h2 class="text-2xl font-bold mt-5 mb-5 section-header">Projects</h2>
 
         <div class="space-y-10">
-          <div>
+          <div class="entry-card fade-in">
             <p class="text-sm text-gray-500">2025 — Present</p>
             <p class="font-medium">
               <a
                 href="https://github.com/ethan-phillips26/InkSlate"
                 target="_blank"
-                class="text-purple-700 hover:underline hover:text-purple-900 transition"
+                class="inline-link inline-link-purple"
               >InkSlate</a>
               · E-Ink Smart Notification Device
             </p>
             <p class="text-sm text-gray-600 mt-1">
-              Designing and developing an ESP32-based e-ink display system with
-              custom PCB, firmware, and wireless notification syncing.
+              Designing and building a low-power IoT notification device from the ground up — including custom PCB layout in KiCad, embedded firmware in C, and wireless data syncing to an ESP32 microcontroller.
             </p>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" class="skill-tag">ESP32</a>
+              <a href="https://en.cppreference.com/w/c" target="_blank" class="skill-tag">C</a>
+            </div>
           </div>
 
-          <div>
+          <div class="entry-card fade-in">
             <p class="text-sm text-gray-500">2026 - Present</p>
             <p class="font-medium">
               <a class="text-purple-700"> AI Power Grid Design Tool </a>
               · NDSU Capstone Project
             </p>
             <p class="text-sm text-gray-600 mt-1">
-              Designing and developing database architecture and backend
-              services for an AI-assisted system that models electrical grid
-              infrastructure and engineering workflows.
+              Architecting the database layer and backend services for an AI-powered electrical grid modeling tool. Implemented a RAG pipeline using LangGraph and the Claude API with pgvector for semantic search, enabling engineers to query infrastructure data in natural language.
             </p>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <a href="https://www.python.org/" target="_blank" class="skill-tag">Python</a>
+              <a href="https://www.postgresql.org/" target="_blank" class="skill-tag">PostgreSQL</a>
+              <a href="https://github.com/pgvector/pgvector" target="_blank" class="skill-tag">pgvector</a>
+              <a href="https://www.langchain.com/langgraph" target="_blank" class="skill-tag">LangGraph</a>
+              <a href="https://www.anthropic.com/api" target="_blank" class="skill-tag">Claude API</a>
+              <a href="https://fastapi.tiangolo.com/" target="_blank" class="skill-tag">FastAPI</a>
+              <a href="https://gofastmcp.com/getting-started/welcome" target="_blank" class="skill-tag">FastMCP</a>
+              <a href="https://react.dev/" target="_blank" class="skill-tag">React</a>
+            </div>
           </div>
 
-          <div>
-            <p class="text-sm text-gray-500">2024</p>
+          <div class="entry-card fade-in">
+            <p class="text-sm text-gray-500">2025</p>
             <p class="font-medium">
               <a
                 href="https://github.com/ethan-phillips26/studyBuddies"
                 target="_blank"
-                class="text-purple-700 hover:underline hover:text-purple-900 transition"
+                class="inline-link inline-link-purple"
                 >StudyBuddies</a
               >
               · Study Partner Matching Web Application
             </p>
             <p class="text-sm text-gray-600 mt-1">
-              Created a full-stack web application using Angular, Django, and
-              Firebase to match students based on study habits and course
-              schedules.
+              Built a full-stack study partner matching platform with Angular, Django, and Firebase. Designed the matching algorithm based on course schedules and study habits, with real-time data sync and user authentication.
             </p>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <a href="https://angular.dev/" target="_blank" class="skill-tag">Angular</a>
+              <a href="https://www.djangoproject.com/" target="_blank" class="skill-tag">Django</a>
+              <a href="https://firebase.google.com/" target="_blank" class="skill-tag">Firebase</a>
+              <a href="https://www.typescriptlang.org/" target="_blank" class="skill-tag">TypeScript</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <footer class="text-center text-slate-500 text-sm">
-        <p class="mt-2">Made with ♥</p>
+      <footer class="text-center text-slate-400 text-sm py-4">
+        <p>© <span id="year"></span> Ethan Phillips</p>
       </footer>
+      <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
     </div>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+  </script>
   </body>
 </html>
